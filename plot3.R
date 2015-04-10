@@ -20,7 +20,7 @@ workingdata$DateAndTime <- as.POSIXct(paste(workingdata$Date, workingdata$Time),
 
 #print plot to png
 png("plot3.png",width=480,height=480)
-plot(workingdata$DateAndTime,workingdata$Sub_metering_1,  type="l", col="black", xlab ="Energy sub metering", ylab ="")
+plot(workingdata$DateAndTime,workingdata$Sub_metering_1,  type="l", col="black", xlab ="", ylab ="Energy sub metering")
 lines(workingdata$DateAndTime, workingdata$Sub_metering_2, type="l", col="red")
 lines(workingdata$DateAndTime, workingdata$Sub_metering_3, type="l", col="blue")
 legend(x="topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2, col=c("black", "red", "blue"))
